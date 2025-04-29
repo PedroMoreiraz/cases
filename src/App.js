@@ -6,10 +6,12 @@ import Machine from './case1/components/Machine';
 
 function Menu() {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-dark text-white">
-      <h1>Escolha seu case:</h1>
-      <Link to="/elevador" className="btn btn-primary m-2">Elevador</Link>
-      <Link to="/machine" className="btn btn-secondary m-2">Candy Machine</Link>
+    <div className="menu-container">
+      <div className="menu-box">
+        <h1 className="menu-title">Escolha seu case:</h1>
+        <Link to="/elevador" className="menu-button btn-primary">Elevador</Link>
+        <Link to="/machine" className="menu-button btn-secondary">Candy Machine</Link>
+      </div>
     </div>
   );
 }
