@@ -1,38 +1,300 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.roomContainer {
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    perspective: 300px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .room {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .wall {
+    position: absolute;
+    background: #333;
+    border: 1px solid #444;
   }
-}
+  
+  .back {
+    width: 500px;
+    height: 300px;
+    transform: translateZ(100px);
+    background: #666;
+    z-index: 0;
+  }
+
+.panelCall {
+    position: absolute;
+    bottom: 30%;
+    left: 31%;
+    width: 35px;
+    height: 55px;
+    background: #686868;
+    border: 2px solid #A7A7A7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    gap: 8px;
+  }
+  
+  .buttonsCall {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .buttonsCall .btn {
+    width: 10px;
+    height: 20px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .elevator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(to right, #5e5d5d 49%, #555 51%);
+    border: 2px solid #A7A7A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .elevator-screen {
+    position: absolute;
+    bottom: 202px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+    background: #000;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px inset #999;
+  }
+  
+  .doors {
+    width: 100%;
+    height: 100%;
+    background:#858484;
+    transition: width 1s ease-in-out;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .doors.open {
+    width: 100%;
+  }
+  
+  .doors.closed {
+    width: 0%;
+  }
+  
+  .panel {
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    transform: translateX(50%);
+    width: 80px;
+    height: 130px;
+    background: #686868;
+    border: 2px solid #A7A7A7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 8px;
+    gap: 6px;
+  }
+  
+  .screen {
+    width: 100%;
+    height: 25px;
+    background: #000;
+    color: #0f0;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px inset #999;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-top: 4px;
+  }
+  
+  .buttons .btn {
+    width: 30px;
+    padding: 2px 0;
+    font-size: 14px;
+  }
+      
+  .left {
+    width: 500px;
+    height: 300px;
+    transform: rotateY(90deg) translateZ(-250px);
+    background: #444;
+  }
+  
+  .right {
+    width: 500px;
+    height: 300px;
+    transform: rotateY(-90deg) translateZ(-250px);
+    background: #444;
+  }
+  
+  .floor {
+    width: 500px;
+    height: 500px;
+    transform: rotateX(90deg) translateZ(-50px);
+    background: #ffffff;
+  }
+  
+  .roof {
+    width: 500px;
+    height: 500px;
+    transform: rotateX(-90deg) translateZ(-250px);
+    background: #2a2a2a;
+  }
+
+  .objeto-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .objeto {
+    position: relative;
+    z-index: 10;
+  }
+  
+  
+  .mesa {
+    width: 100px;
+    height: 50px;
+    background-color: #8B4513;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .sofa {
+    width: 100px;
+    height: 50px;
+    background-color: #0d2cdb;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10
+  }
+  
+  .cadeira {
+    width: 100px;
+    height: 50px;
+    background-color: #22c0e7;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .tapete {
+    width: 100px;
+    height: 50px;
+    background-color: #f792e1;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+  }   
+
+  .map-toggle {
+    position: fixed;
+    bottom: 245px;
+    right: 20px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .map-overlay {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    color: #000;
+    border: 2px solid #aaa;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .paginacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .paginacao button {
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .paginacao span {
+    font-size: 10px;
+  }
+
+  .btnMap{
+    color: #000;
+  }
+
+  .voltarBtn{
+    position: absolute;
+    left: 1%;
+    top: 2%;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(45deg, #60abe9 0%, #19a1f0  51%, #204abd  100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+  }

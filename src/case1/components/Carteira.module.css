@@ -1,0 +1,36 @@
+.containerCarteira {
+    background-image: url('./images/carteira.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15em;
+    height: 10%;
+    position: absolute;
+    top: 88%;
+    left: 86%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease;
+    transform-origin: right center; 
+  }
+  
+
+  .containerCarteira.aberto {
+    background-image: url('./images/carteiraaberta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16em;
+    height: 14%;
+    position: absolute;
+    top: 86%;
+    left: 85%;
+    transition: width 0.7s ease, height 0.1s ease;;
+  }
+  
+  .conteudoCarteira {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+  }

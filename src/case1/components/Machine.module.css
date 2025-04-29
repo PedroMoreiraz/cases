@@ -1,0 +1,420 @@
+.containerMaquina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fundoMaquina{
+    width: 30%;
+    height: 80%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftSide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerVidro{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vidro{
+    position: absolute;
+    width: 15vw;
+    height: 65%;
+    background-color: #d8d8d8;
+    margin: 30px 30px 0 30px;
+    left: 35%;
+    top: 9%;
+}
+
+.luz{
+    max-width: 400px;
+    margin: auto;
+    height: 480px;
+    clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+    padding-top: 40px;
+    background: linear-gradient(rgba(253, 255, 114,1), rgba(216, 216, 216,.2));
+}
+
+.shelf1{
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    width: 88%;
+    height: 10%;
+    background-color: #9b9b9b;
+    border-bottom: 8px solid #525252;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doceA{
+    position: absolute;
+    left: 46%;
+    top: 46%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.fini1{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+}
+
+.shelf2{
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    width: 88%;
+    height: 10%;
+    background-color: #9b9b9b;
+    border-bottom: 8px solid #525252;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doceB{
+    position: absolute;
+    left: 46%;
+    top: 46%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.fini2{
+    position: absolute;
+    left: 10px;
+    top: -32px;
+}
+
+.shelf3{
+    position: absolute;
+    left: 13%;
+    top: 80%;
+    width: 88%;
+    height: 10%;
+    background-color: #9b9b9b;
+    border-bottom: 8px solid #525252;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.doceC{
+    position: absolute;
+    left: 46%;
+    top: 46%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.fini3{
+    position: absolute;
+    left: 10px;
+    top: -32px;
+}
+
+.vidro ul{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.containerRetirarDoces{
+    height: 100%;
+}
+
+.saidaItens{
+    position: absolute;
+    width: 15vw;
+    height: 8%;
+    background-color: #4b4b4b;
+    margin: 0 30px 0 30px;
+    left: 35%;
+    top: 80%;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagemDoce{
+    transform: rotate(10deg);
+}
+
+.rightSide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerOpcoes{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.visor{
+    position: absolute;
+    width: 9vw;
+    height: 25%;
+    background-color: #ffffff;
+    margin: 30px 30px 0px 30px;
+    left: 53%;
+    top: 9%;
+    border-radius: 15px;
+}
+
+.values{
+    position: absolute;
+    left: 31%;
+    top: 35%;
+    width: 100%;
+    height: 2vh;
+    display: flex;
+}
+
+.textValues{
+    position: absolute;
+    left: 18%;
+    top: 38%;
+    width: 100%;
+    height: 2vh;
+    display: flex;
+}
+
+.containerValues{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opcoes{
+    position: absolute;
+    left: 53%;
+    top: 40%;
+    width: 9vw;
+    height: 20%;
+    margin: 30px 30px 0px 30px;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.options{
+    padding: 5px;
+    color: #000000;
+}
+
+.btn{
+    position: absolute;
+    padding: 5px;
+    top: 525px;
+    left: 1035px;
+    top: 500px;
+    left: 1035px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 14px -7px #0571ff;
+    background-image: linear-gradient(45deg, #60abe9 0%, #19a1f0  51%, #204abd  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    color: #000;
+
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #fff;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+
+.containerDinheiro{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dinheiroEntrada{
+    position: absolute;
+    width: 6vw;
+    height: 1%;
+    background-color: #d8d8d8;
+    left: 56%;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.furoDinehiroEntrada{
+    width: 5vw;
+    height: 0.3vh;
+    background-color: #555555;
+}
+
+.dinheiroSaida{
+    position: absolute;
+    width: 6vw;
+    height: 1%;
+    background-color: #d8d8d8;
+    left: 56%;
+    top: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.furoDinheiroSaida{
+    width: 5vw;
+    height: 0.3vh;
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moeda{
+    position: absolute;
+    width: 0.3vw;
+    height: 2%;
+    background-color: #d8d8d8;
+    left: 55%;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.furoMoeda{
+    width: 0.1vw;
+    height: 1vh;
+    background-color: #555555;
+}
+
+.troco{
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    padding: 10px;
+    color: transparent;
+    background-image: url('./images/nota2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    transform: rotate(90deg);
+}
+
+.trocoDuplo{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    padding: 10px;
+    color: transparent;
+    background-image: url('./images/nota2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    transform: rotate(90deg);
+}
+
+
+.trocoMoeda{
+    color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    left: -40px;
+    top: -26px;
+    padding: 10px;
+    background-image: url('./images/moeda1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+.containerMochila{
+    position: absolute;
+    left: 1%;
+    top: 78%;
+    background-color: rgb(146, 146, 146);
+    width: 19em;
+    height: 10em;
+    border: 2px solid #000;
+}
+
+.conteudoMochila{
+    display: flex;
+}
+
+.reloadBtn{
+    position: absolute;
+    left: 97%;
+    top: 2%;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(45deg, #60abe9 0%, #19a1f0  51%, #204abd  100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+}

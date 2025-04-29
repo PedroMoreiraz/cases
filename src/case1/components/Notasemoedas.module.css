@@ -1,0 +1,69 @@
+.Notas {
+    padding: 10px;
+    background-color: #2cdb49;
+    border: 2px solid #086618;
+    cursor: pointer;
+    width: 35px;
+    height: 80px;
+    text-align: center;
+    user-select: none;
+}
+
+.nota1 {
+    color: transparent;
+    padding: 10px;
+    background-image: url('./images/nota2.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -10px;
+    top: -25px;
+}
+
+.nota2 {
+    color: transparent;
+    padding: 10px;
+    background-image: url('./images/nota5.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 50px;
+    top: -25px;
+}
+
+
+.moeda {
+
+    border-radius: 50%;
+    color: transparent;
+    padding: 10px;
+    background-image: url('./images/moeda1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    text-align: end;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 120px;
+    top: -15px;
+}
